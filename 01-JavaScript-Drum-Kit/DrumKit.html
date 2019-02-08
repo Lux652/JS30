@@ -5,62 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JS DrumKit</title>
-
-    <link
-      rel="stylesheet"
-      href="../node_modules/materialize-css/dist/css/materialize.css"
-    />
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css" />
+    <script src="../materialize/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style/style.css" />
-    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
     <script src="js/app.js"></script>
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="../Index.html" class="brand-logo">JS30</a>
+        </div>
+      </nav>
+    </header>
+
     <div class="keys">
-      <div data-key="65" class="key">
-        <kbd>A</kbd> <span class="sound">clap</span>
+      <div data-key="67" class="key snare">
+        <kbd>C</kbd> <span class="sound">Snare</span>
       </div>
 
-      <div data-key="83" class="key">
-        <kbd>S</kbd> <span class="sound">hihat</span>
+      <div data-key="88" class="key bass1">
+        <kbd>X</kbd> <span class="sound">Bass2</span>
       </div>
 
-      <div data-key="68" class="key">
-        <kbd>D</kbd> <span class="sound">kick</span>
+      <div data-key="66" class="key bass2">
+        <kbd>B</kbd> <span class="sound">Bass1</span>
       </div>
 
-      <div data-key="70" class="key">
-        <kbd>F</kbd> <span class="sound">openhat</span>
+      <div data-key="78" class="key hihat">
+        <kbd>N</kbd> <span class="sound">Hihat</span>
       </div>
 
-      <div data-key="71" class="key">
-        <kbd>G</kbd> <span class="sound">boom</span>
+      <div data-key="70" class="key tom1">
+        <kbd>F</kbd> <span class="sound">Tom1</span>
       </div>
 
-      <div data-key="72" class="key">
-        <kbd>H</kbd> <span class="sound">ride</span>
+      <div data-key="71" class="key tom2">
+        <kbd>G</kbd> <span class="sound">Tom2</span>
       </div>
 
-      <div data-key="74" class="key">
-        <kbd>J</kbd> <span class="sound">snare</span>
+      <div data-key="73" class="key ride">
+        <kbd>I</kbd> <span class="sound">Ride</span>
       </div>
 
-      <div data-key="75" class="key">
-        <kbd>K</kbd> <span class="sound">tom</span>
+      <div data-key="72" class="key fltom">
+        <kbd>H</kbd> <span class="sound">Floor tom</span>
       </div>
 
-      <div data-key="76" class="key">
-        <kbd>L</kbd> <span class="sound">tink</span>
+      <div data-key="69" class="key crash1">
+        <kbd>E</kbd> <span class="sound">Crash1</span>
+      </div>
+
+      <div data-key="85" class="key crash2">
+        <kbd>U</kbd> <span class="sound">Crash2</span>
+      </div>
+
+      <div data-key="79" class="key china">
+        <kbd>O</kbd> <span class="sound">China</span>
       </div>
     </div>
 
-    <audio data-key="65" src="sounds/clap.wav"></audio>
-    <audio data-key="83" src="sounds/hihat.wav"></audio>
-    <audio data-key="68" src="sounds/kick.wav"></audio>
-    <audio data-key="70" src="sounds/openhat.wav"></audio>
-    <audio data-key="71" src="sounds/boom.wav"></audio>
-    <audio data-key="72" src="sounds/ride.wav"></audio>
-    <audio data-key="74" src="sounds/snare.wav"></audio>
-    <audio data-key="75" src="sounds/tom.wav"></audio>
-    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <audio data-key="78" src="sounds/hihat.wav"></audio>
+    <audio data-key="66" src="sounds/kick.wav"></audio>
+    <audio data-key="88" src="sounds/kick.wav"></audio>
+    <audio data-key="67" src="sounds/snare.wav"></audio>
+    <audio data-key="73" src="sounds/ride.wav"></audio>
+    <audio data-key="70" src="sounds/tom1.wav"></audio>
+    <audio data-key="71" src="sounds/tom2.wav"></audio>
+    <audio data-key="72" src="sounds/fltom.wav"></audio>
+    <audio data-key="69" src="sounds/crash1.wav"></audio>
+    <audio data-key="85" src="sounds/crash2.wav"></audio>
+    <audio data-key="79" src="sounds/china.wav"></audio>
   </body>
 </html>

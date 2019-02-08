@@ -1,22 +1,44 @@
-html {
-    font-size: 10px;
-    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-    background-size: cover;
-  }
+
   
   body,html {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
   }
+  .keys{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    grid-template-rows:repeat(4,1fr);
+    grid-template-areas:". crash1 . . . crash2 ." ". . tom1 tom2 ride . china" ". hihat . snare . fltom ." ". . bass1 . bass2 . .";
+  }
+
+.bass1 { grid-area: bass1; }
+
+.bass2 { grid-area: bass2; }
+
+.snare { grid-area: snare; }
+
+.hihat { grid-area: hihat; }
+
+.tom1 { grid-area: tom1; }
+
+.tom2 { grid-area: tom2; }
+
+.ride { grid-area: ride; }
+
+.fltom { grid-area: fltom; }
+
+.crash1 { grid-area: crash1; }
+
+.crash2 { grid-area: crash2; }
+
+.china { grid-area: china; }
   
-  .keys {
-    display: flex;
-    flex: 1;
+  /* .keys{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-  }
+  } */
   
   .key {
     border: .4rem solid black;
